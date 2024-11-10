@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".activities.MessagesActivity">
+
+    <!-- Заголовок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Хабарламалар"
+            android:textColor="#FCC603"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Прокручиваемый контейнер для категорий сообщений -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingVertical="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Поступления -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Аударымдар"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#e0e0e0"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Аударым: 5000 теңге"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Аударым: 2000 теңге"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+            </LinearLayout>
+
+            <!-- Платежи -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Төлемдер"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#e0e0e0"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Төлем: 3000 теңге"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Төлем: 1500 теңге"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+            </LinearLayout>
+
+            <!-- Новости -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Жаңалықтар"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#e0e0e0"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Жаңа акция: Төлемдерге жеңілдік"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Тариф өзгерістері"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+            </LinearLayout>
+
+            <!-- Прочее -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Басқа"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="#e0e0e0"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Хабарлама: Жаңа нұсқаны жүктеңіз"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Хабарлама: 'Аударымдар' бөліміндегі жаңа функционал"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:fontFamily="@font/inter_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Нижнее меню -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/homeButtonMessages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Басты бет"
+                    android:src="@drawable/ic_home2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Басты бет"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="QR"
+                    android:src="@drawable/ic_qr_payment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="QR"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Хабарламалар"
+                    android:src="@drawable/ic_notifications1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#FCC603"
+                    android:text="Хабарламалар"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
