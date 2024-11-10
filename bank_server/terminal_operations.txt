@@ -1,0 +1,7 @@
+
+uvicorn main:app --host 192.168.0.1007 --port 8000
+uvicorn main:app --host 172.20.10.7 --port 8000
+
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+cmd ip checking:   ipconfig
