@@ -1,0 +1,5 @@
+.idea/
+.venv/
+__pyache__/
+config.py
+terminal_operations.txt
